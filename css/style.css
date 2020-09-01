@@ -1,0 +1,242 @@
+@charset:"UTF-8";
+
+/*すべての要素にborderbox*/
+*{
+    box-sizing: border-box;
+}
+/*Googleフォント*/
+body{
+    font-family: "M PLUS Rounded 1c";
+}
+
+
+/*header*/
+
+/*葉っぱのロゴの大きさ*/
+header .clover{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: 250px;
+    border-radius:50%;
+}
+
+/*アイコンの周りと大きさ_削って色をつける*/
+header img.icon{
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+
+    background:silver;
+}
+
+
+/*Navigation*/
+
+/*ナビゲーションの立ち位置：右寄りに、右にやや空白を開ける*/
+header nav.nav{
+    float: right;
+    padding:auto 15% auto 15%;
+    margin:auto 15% auto auto;
+}
+
+/*リストを揃え、メニュー欄を左詰にする*/
+header li.menu{
+    float:left;
+    padding:15px;
+    margin:20px;
+}
+
+/*文字サイズ、カラー、リンクの下線を廃止*/
+ul a{
+    font-size:20px;
+    color:black;
+    text-decoration-line: none;
+}
+
+/*カーソルを選択すると下線を引く*/
+header li:hover{
+    text-decoration-line: underline;
+}
+
+/*main*/
+
+/*h1要素は共通*/
+/*h1要素の見出しのサイズと位置 float打ち消し*/
+main h1{
+    clear: right;
+    font-weight: bolder;
+    font-size:40px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/*index.html */
+
+/*文章の改行を整える_ディスプレイにブロック*/
+main span.pc-br{
+    display: block;
+}
+
+/*文章要素のサイズ*/
+main section.section{
+    display: flex;
+    line-height: 1.5;
+    margin-right: 15%;
+    margin-left:15%;
+    margin-bottom: 0.5%;
+}
+
+/*table*/
+
+/*table要素の立ち位置*/
+section.table{
+    margin-right: 100px;
+    margin-left: 220px;
+    margin-top: 2%;
+}
+
+/*スモークを炊く*/
+div.smoke{
+    background:whitesmoke;
+    margin-top:5px;
+    margin-right:200px;
+}
+
+/*table要素：タイトルの下線を引く*/
+main table tr.row-table
+{
+    
+    border-top: none;
+    border-bottom: dotted 2px;
+    border-color:darkgray;
+}
+
+/*table要素：表の下線を引く*/
+main table tbody tr{
+    border-top: none;
+    border-bottom:dotted 2px;
+    border-bottom-color:darkgray;
+}
+
+/*表の末の線を消す*/
+tbody tr:last-child{
+    border:none;
+}
+
+
+/*表の左タイトルの文字を大きくする*/
+.title-one{
+    font-size:25px;
+    color: darkgoldenrod;
+}
+
+/*表に余白を持たせる_左の表*/
+.table th{
+    padding:10px;
+}
+
+/*表の左だけ文字を大きく*/
+.tbody tr th{
+    font-size:17px;
+}
+
+/*表に余白を持たせる_右の表*/
+table td{
+    padding-right: 5px;
+    padding-left:550px;
+}
+
+/*右の表を右に寄せる*/
+.title-two{
+    padding-left:700px;
+}
+
+/*form.html*/
+
+/*フォーム要素の中央揃え*/
+main div.form{
+    text-align: center;
+}
+
+
+/*送信要素全体を整える*/
+main div.form_list{
+    padding-top:auto;
+    padding-bottom:auto;
+}
+
+
+/*入力欄のメールボックス周りを整える*/
+main div.mailbox{
+    padding: 10px;
+    margin: 5px;
+}
+
+
+/*入力欄のメールボックスのサイズと中の文字を整える*/
+main input.Email{
+    width: 700px;
+    height: 50px;
+    padding:5px;
+    font-size: 20px;
+    background-color: silver;
+}
+
+
+/*内容のボックスの大きさ*/
+main .comment{
+    width:700px;
+    height:600px;
+    margin: 5px;
+    padding: 5px ;
+    font-size:20px;
+    background-color: silver;
+}
+
+/*送信ボタンの周りを調整*/
+main div.button{
+    margin-top:  3%;
+    margin-left: 38%;
+    margin-bottom:5%;
+}
+
+/*送信ボタンの中身を調整*/
+
+/*送信ボタン：サイズと余白*/
+main input[type="submit"]{
+    padding: 25px 50px;
+}
+
+/*送信ボタン：色*/
+main input[type="submit"]{
+    background: black;
+    color :aliceblue;
+}
+
+/*送信ボタン：フォント*/
+main input[type="submit"]{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*footer*/
+/*背景：空白の設定*/
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin-top: 100px;
+    background: black;
+}
+
+/*著作権情報*/
+footer div.copy{
+        text-align: center;
+        color:azure;
+}
+
+/*cの色*/
+footer p.copy{
+    color:azure;
+}
